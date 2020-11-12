@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Underdog&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="container">
+    <h1 class="text-editor mt-5">Конструктор кода</h1>
+
+    <div class="format-btn mt-5">
+        <button type="button" class="btn btn-secondary decoration" onclick="textThrough(this)">S</button>
+        <button type="button" class="btn btn-secondary" onclick="fontItalic(this)">I</button>
+        <button type="button" class="btn btn-secondary" onclick="fontBold(this)">B</button>
+        <button type="button" class="btn btn-secondary decoration" onclick="textUnderline(this)">U</button>
+        <button type="button" class="btn btn-secondary color" onclick="textDanger(this)">Red</button>
+        <button type="button" class="btn btn-secondary color" onclick="textPrimary(this)">Blue</button>
+        <button type="button" class="btn btn-secondary color" onclick="textSuccess(this)">Green</button>
+        <button type="button" class="btn btn-secondary align" onclick="textRight(this)">Right</button>
+        <button type="button" class="btn btn-secondary align" onclick="textCenter(this)">Center</button>
+        <button type="button" class="btn btn-secondary align" onclick="textLeft(this)">Left</button>
+        <button type="button" class="btn btn-secondary text-case" onclick="textLowercase(this)">Lowercase</button>
+        <button type="button" class="btn btn-secondary text-case" onclick="textUppercase(this)">Uppercase</button>
+    </div>
+
+   <div class="row mt-5">
+       <div class="col-6">
+           <div class="form-group">
+               <label for="text-input">Input</label>
+               <textarea id="text-input" rows="6"></textarea>
+           </div>
+       </div>
+       <div class="col-6">
+           <div class="form-group-right">
+               <label for="text-output">Output</label>
+               <textarea id="text-output" rows="6"></textarea>
+           </div>
+       </div>
+   </div>
+
+</div>
+<script src="./main.js"></script>
+</body>
+</html>

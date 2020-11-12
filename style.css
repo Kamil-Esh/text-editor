@@ -1,0 +1,70 @@
+textarea {
+    width: 100%;
+}
+.line-through {
+    text-decoration: line-through;
+}
+.text-underline {
+    text-decoration: underline;
+}
+.font-size {
+    font-size: 20px;
+}
+.text-editor {
+    position: relative;
+    text-align: center;
+    margin-top: -50px;
+    animation-name: translate-title;
+    animation-duration: 1.3s;
+}
+.format-btn {
+    text-align: center;
+}
+.btn {
+    font-size: 20px;
+}
+body {
+    font-size: 30px;
+    font-family: 'Underdog', cursive;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: url("https://www.publicdomainpictures.net/pictures/130000/velka/aqua-blue-gradient-background.jpg");
+}
+.active {
+    background-color: #ff9800 !important;
+}
+.form-group {
+    position: relative;
+    animation-name: translate-textarea;
+    animation-duration: 1.3s;
+}
+.form-group-right {
+    position: relative;
+    animation-name: translate-textarea-right;
+    animation-duration: 1.3s;
+}
+@keyframes translate-title {
+    0% {
+        top: -500px;
+    }
+    100% {
+        top: 0;
+    }
+}
+@keyframes  translate-textarea  {
+    0% {
+        left: -400px;
+    }
+    100% {
+        left: 0;
+    }
+}
+@keyframes translate-textarea-right {
+    0% {
+        right: -400px;
+    }
+    100% {
+        right: 0;
+    }
+}
